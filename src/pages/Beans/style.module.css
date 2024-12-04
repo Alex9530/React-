@@ -1,0 +1,16 @@
+.container,
+.search {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+@media screen and (max-width: 390px) {
+  .container h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .search {
+    width: 100%;
+  }
+}

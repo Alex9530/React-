@@ -1,0 +1,19 @@
+@import url("../../var.css");
+.logo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--head-color);
+  background-color: var(--light-body-color);
+  margin: auto;
+}
+.logo img {
+  width: 40%;
+  background-color: var(--light-body-color);
+}
+@media screen and (max-width: 390px) {
+  .logo {
+    width: 100px;
+  }
+}

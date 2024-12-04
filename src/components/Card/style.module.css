@@ -1,0 +1,49 @@
+@import url("../../var.css");
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 400px;
+  height: 400px;
+  padding: 1.2rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.card img {
+  height: 200px;
+}
+.card h4 {
+  color: var(--head-color);
+  text-align: center;
+}
+.card p {
+  color: var(--head-color);
+  text-align: center;
+  font-size: 0.8rem;
+}
+.card:hover {
+  border-radius: 10px;
+  background-color: rgba(240, 240, 240, 0.5);
+  border-radius: 1rem;
+  border: 1px solid var(--btn-red);
+}
+
+.card img,
+.card p,
+.card h4 {
+  background-color: transparent; /* Убираем фон у дочерних элементов */
+}
+@media screen and (max-width: 390px) {
+  .card {
+    height: 150px;
+    padding: 0.8rem;
+  }
+  .card h4 {
+    font-size: 0.8rem;
+  }
+  .card p {
+    font-size: 0.4rem;
+  }
+  .card img {
+    height: 50px;
+  }
+}

@@ -1,0 +1,35 @@
+@import url("../../var.css");
+
+.container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: var(--light-body-color);
+  /* margin: auto; */
+  align-items: center;
+}
+.container a {
+  font-size: 20px;
+  background-color: var(--light-body-color);
+  color: var(--head-color);
+  font-family: var(--head-font);
+  margin-right: 0.2rem;
+  padding: 0.5rem;
+}
+.container a:hover {
+  border-radius: 20px;
+  border: 0.1rem solid var(--secondary-color);
+  color: var(--head-color);
+}
+@media screen and (max-width: 1024px) {
+  .container a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    display: none;
+  }
+}

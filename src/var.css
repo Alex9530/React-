@@ -1,0 +1,13 @@
+:root {
+  --head-color: #e83a4b;
+  --secondary-color: #ee9085;
+  --light-pink: #fbd6d3;
+  --dark-red: #bd2328;
+  --btn-red: #ec2c2f;
+  --light-body-color: #f9f5f4;
+  --dark-body-color: #eeeae6;
+  --max-width: 1400px;
+  --head-font: "Roboto", sans-serif;
+  --text-font: "Raleway", sans-serif;
+  --computer-font: "Space Mono", monospace;
+}

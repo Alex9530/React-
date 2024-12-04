@@ -1,0 +1,96 @@
+@import url("../../var.css");
+.container1 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-body-color);
+  margin: 100px auto;
+  width: 50%;
+  height: max-content;
+  padding: 40px;
+  border-radius: 2.5rem;
+  color: var(--head-color);
+}
+
+.container1 h4,
+.container1 div,
+.container1 h1,
+.container1 img,
+.container1 p,
+.btn,
+.container1 strong {
+  background-color: transparent;
+  font-family: var(--text-font);
+}
+.container1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 5px 0px;
+}
+.container1 img {
+  margin: auto;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.container1 p {
+  text-align: left;
+}
+.btn {
+  color: var(--head-color);
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+  position: relative;
+  text-align: center;
+  gap: 5px;
+  height: 40px;
+}
+.btn svg {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+}
+.btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ingredient {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .container1 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .container1 {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .container1 h1 {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .informations ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container1 div,
+  .informations {
+    font-size: 10px;
+  }
+  .container1 img {
+    width: 100%;
+  }
+  .informations {
+    font-size: 10px;
+  }
+}
